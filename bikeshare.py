@@ -48,21 +48,21 @@ def get_filters():
             if day_month_filter.lower() == 'y':
 
                 # TO DO: get user input for month (all, january, february, ... , june)
-                months = ['January','February','March','April','May','June','All']
+                available_months = ['January','February','March','April','May','June','All']
                 month = input("\nEnter the month you want to view (January to June), or enter 'All' to view data for all 6 months: ")
 
                 # Check if user input is a valid month, if not, ask them to enter it again
-                while  month.title() not in months:
+                while  month.title() not in available_months:
                     month = input("Sorry, looks like that input wasn't quite right. Please enter a month from January to June, or enter 'All': ")
 
                 month = month.title()
 
                 # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
-                days = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday','All']
+                available_days = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday','All']
                 day = input("\nEnter the day of the week you want to view, or enter 'All' to view data for all days: ")
 
                 # Check if user input is a valid day, if not, ask them to enter it again
-                while day.title() not in days:
+                while day.title() not in available_days:
                     day = input("Sorry, looks like that wasn't a valid input. Please enter a day of the week you want to view, or enter 'All': ")
 
                 day = day.title()
