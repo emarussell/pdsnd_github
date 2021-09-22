@@ -224,7 +224,7 @@ def station_stats(df):
 
 def trip_duration_stats(df):
     """
-    Displays statistics on the total and average trip duration.
+    Displays statistics on the total and average trip duration.  Initial time calculation is in seconds, time is then converted into minutes, days and hours.
 
     Returns:
         (float) trip_stats_time_calculation - length of time taken to calculate trip duration stats in seconds
