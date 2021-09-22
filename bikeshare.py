@@ -58,11 +58,11 @@ def get_filters():
                 month = month.title()
 
                 # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
-                days = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday','All']
+                available_days = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday','All']
                 day = input("\nEnter the day of the week you want to view, or enter 'All' to view data for all days: ")
 
                 # Check if user input is a valid day, if not, ask them to enter it again
-                while day.title() not in days:
+                while day.title() not in available_days:
                     day = input("Sorry, looks like that wasn't a valid input. Please enter a day of the week you want to view, or enter 'All': ")
 
                 day = day.title()
